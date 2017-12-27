@@ -3,11 +3,11 @@ var fs = require('fs');
 var request = require('request');
 global.fetch = require('node-fetch');
 const cc = require('cryptocompare');
-var d3 = require("d3"),
-    jsdom = require("jsdom");
+// var d3 = require("d3"),
+//     jsdom = require("jsdom");
 
-var document = jsdom.jsdom(),
-    svg = d3.select(document.body).append("svg");
+// var document = jsdom.jsdom(),
+//     svg = d3.select(document.body).append("svg");
 
 var query;
 var con = mysql.createConnection({
@@ -158,11 +158,5 @@ console.log(dataChart);
 
 }
 // console.log(dataChart);
-    var line = d3.line()
-       .x(function(d) { return x(d.date); })
-       .y(function(d) { return y(d.value); });
-
-var div = document.createElement("div");
-div.innerHTML = "Hello, world!";
-document.body.appendChild(div);
+//     var line = d3.lcl
 
